@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Alghamdi - Personal Website</title>
+
+  <meta name="description" content="Official personal website of Ahmed Alghamdi – showcasing projects, achievements, and contact information.">
+  <meta name="keywords" content="Ahmed Alghamdi, Portfolio, Developer, Personal Website, Projects, Contact">
+  <meta name="author" content="Ahmed Alghamdi">
+
+  <meta property="og:title" content="Ahmed Alghamdi - Personal Website">
+  <meta property="og:description" content="Explore Ahmed Alghamdi's portfolio, projects, and contact information.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://yourusername.github.io/ahmedalghamdi/profile.jpg">
+  <meta property="og:url" content="https://yourusername.github.io/ahmedalghamdi">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ahmed Alghamdi",
+    "url": "https://yourusername.github.io/ahmedalghamdi",
+    "sameAs": [
+      "https://linkedin.com/in/yourprofile",
+      "https://github.com/yourusername"
+    ]
+  }
+  </script>
+
+  <style>
+/* Weather App Styling */
+.weather-container {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.weather-input {
+  width: 70%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.weather-btn {
+  background: #ff4b2b;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.weather-btn:hover {
+  background: #ff416c;
+}
+
+.weather-result {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Style links only */
+a {
+  color: #ff4b2b;           /* Bright orange */
+  text-decoration: none;    /* Remove underline */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff416c;           /* Lighter pinkish orange on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #141E30, #243B55);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease-in-out;
+    }
+    .container:hover {transform: translateY(-5px);}
+    h1 {font-size: 2.5rem; font-weight: 600; margin-bottom: 10px;}
+    p {font-size: 1rem; opacity: 0.9; margin-bottom: 20px;}
+    .buttons {
+      margin-bottom: 20px;
+    }
+    .buttons button {
+      background: #ff4b2b;
+      color: white;
+      padding: 12px 25px;
+      margin: 10px 10px 10px 0;
+      border-radius: 30px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+      font-family: 'Poppins', sans-serif;
+    }
+    .buttons button:hover {
+      background: #ff416c;
+      transform: scale(1.05);
+    }
+    section {
+      display: none;
+      margin-top: 30px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    section.active {
+      display: block;
+    }
+    footer {margin-top: 20px; font-size: 0.8rem; opacity: 0.5;}
+    @media (max-width: 500px) {
+      h1 {font-size: 2rem;}
+      .buttons button {padding: 10px 20px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ahmed Alghamdi</h1>
+    <p>Welcome to my personal website – a space to share my work, projects, and ideas.</p>
+    
+    <div class="buttons">
+      <button onclick="showSection('about')">About Me</button>
+      <button onclick="showSection('contact')">Contact</button>
+      <button onclick="showSection('weather')">Weather App</button>
+    </div>
+
+    <section id="about">
+      <h2>About Ahmed Alghamdi</h2>
+      <p>I LOVE TO LEARN</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ahmed_alghamdi11@outlook.com">ahmed_alghamdi11@outlook.com</a></p>	
+      <p>LinkedIn: <a href="www.linkedin.com/in/ahmed-al-ghamdi-375864366" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/ahmed-al-ghamdi-375864366</a></p>
+	<p>GitHub Repositories/Releases:</p>
+ 	 <ul>
+    	     <li><a href="https://github.com/AHMED-ALGHAMDI-100/ObjectDetectionDroneProject.git" target="_blank" rel="noopener noreferrer">ComputerVisionProject</a></li>
+   	     <li><a href="https://github.com/AHMED-ALGHAMDI-100/Library-Management-System/releases/tag/v2.0" target="_blank" rel="noopener noreferrer">LMS</a></li>
+      <!-- Empty as requested -->
+    </section>
+
+------------------------
+    
+   <section id="weather" class="weather-container">
+  <h2>Weather App</h2>
+  <input type="text" id="cityInput" placeholder="Enter a city name" class="weather-input">
+  <button onclick="getWeather()" class="weather-btn">Get Weather</button>
+  <div id="weatherResult" class="weather-result"></div>
+</section>
+------------------------
+
+
+    <footer>© 2025 Ahmed Alghamdi</footer>
+  </div>
+
+  <script>
+
+    function showSection(id) {
+      // Hide all sections
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      // Show the clicked section
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+---------------------------------------
+------------------------------------------
+<script>
+  const apiKey = "70f763475d20cddde48c1ee5793f07ea";
+
+  function getWeather() {
+    const city = document.getElementById("cityInput").value.trim();
+    const resultDiv = document.getElementById("weatherResult");
+
+    if (!city) {
+      resultDiv.innerHTML = "⚠️ Please enter a city name.";
+      return;
+    }
+
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+      .then(response => {
+        if (!response.ok) throw new Error("City not found");
+        return response.json();
+      })
+      .then(data => {
+        const temp = Math.round(data.main.temp); // Rounded to integer
+        const desc = data.weather[0].description;
+        const icon = data.weather[0].icon;
+        const emoji = getWeatherEmoji(icon);
+
+        resultDiv.innerHTML = `
+          <div style="font-size:3rem;">${emoji}</div>
+          <div>${temp}°C - ${desc}</div>
+        `;
+      })
+      .catch(error => {
+        resultDiv.innerHTML = `❌ ${error.message}`;
+      });
+  }
+
+  function getWeatherEmoji(icon) {
+    if (icon.includes("01")) return "☀️";
+    if (icon.includes("02") || icon.includes("03")) return "⛅";
+    if (icon.includes("04")) return "☁️";
+    if (icon.includes("09") || icon.includes("10")) return "🌧️";
+    if (icon.includes("11")) return "⛈️";
+    if (icon.includes("13")) return "❄️";
+    if (icon.includes("50")) return "🌫️";
+    return "🌡️";
+  }
+</script>
+------------------------------------
+</body>
+</html>
